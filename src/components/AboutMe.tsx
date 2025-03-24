@@ -8,16 +8,16 @@ import Link from "next/link";
 const AboutMe = () => {
   return (
     <div
-      className="mx-[10%] flex h-screen items-center pt-[15%] md:mx-[15%] md:size-auto md:pt-[8%] 2xl:pt-[5%]"
+      className="mx-[10%] flex h-screen items-center pt-[10vh] md:mx-[15%] md:h-auto md:pt-[8%] 2xl:pt-[5%]"
       id="aboutme"
     >
       <div className="grid grid-cols-1 py-[5%] md:grid-cols-4">
         <div className="relative size-fit">
-          <Image src={casual} alt="casual" className="w-[70vw] md:w-[15vw]" />
+          <Image src={casual} alt="casual" className="w-[80vw] md:w-[15vw]" />
           <Image
             src={online}
             alt="online"
-            className="absolute right-0 bottom-0 w-18"
+            className="absolute right-6 bottom-0 w-18 md:right-0"
           />
         </div>
         <div className="flex flex-col items-center justify-center pt-8 md:col-span-3 md:items-start md:pt-0">
