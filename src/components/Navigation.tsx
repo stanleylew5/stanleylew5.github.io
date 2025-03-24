@@ -14,7 +14,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="sticky flex items-center shadow-xl">
+    <div className="fixed z-50 flex w-screen items-center bg-white shadow-xl">
       <div className="flex flex-row">
         <Link href="/" className="flex items-center">
           <Image src={prof} alt="prof" className="ml-4 w-15 py-2 md:w-20" />
