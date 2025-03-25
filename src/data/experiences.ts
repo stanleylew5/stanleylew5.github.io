@@ -3,6 +3,7 @@ import acm from "../../public/experiences/acm.png";
 import tkh from "../../public/experiences/tkh.png";
 import dv from "../../public/experiences/dv.png";
 import bearhack from "../../public/experiences/bearhack.png";
+import edmo from "../../public/experiences/edmo.png";
 export const experiences = [
   {
     photo: dau,
@@ -57,6 +58,16 @@ export const experiences = [
     city: "Riverside, California",
     contributions: [
       "- Leveraged Next.js, TailwindCSS, and React expertise to create dynamic content and ensure optimal mobile responsiveness for BearHack 2024 Website",
+    ],
+  },
+  {
+    photo: edmo,
+    company: "EdventureMore",
+    position: "Summer Camp Instructor",
+    dates: "Jun 2023 - Jul 2023",
+    city: "San Jose, California",
+    contributions: [
+      "- Led and instructed classes of 30+ campers through daily activities focused on various curriculum themes: Minecraft Education Edition (Block coding), Procreate software, Bridge-Designing, etc.",
     ],
   },
 ];
