@@ -28,7 +28,7 @@ const Pebble = {
 const AboutMe = () => {
   return (
     <div
-      className="mx-[10%] flex h-screen items-center pt-[10vh] md:mx-[15%] md:h-auto md:pt-[8%] 2xl:pt-[5%]"
+      className="mx-[10%] flex min-h-screen items-center pt-[10vh] md:mx-[15%] md:h-auto md:pt-[8%] 2xl:pt-[5%]"
       id="aboutme"
     >
       <div className="grid grid-cols-1 py-[5%] md:grid-cols-4">
