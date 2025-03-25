@@ -1,7 +1,8 @@
 import Image from "next/image";
 import casual from "../../public/casual.png";
 import online from "../../public/online.svg";
-import { FaInstagramSquare, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
 import { MdEmail } from "react-icons/md";
 import { IoIosDocument } from "react-icons/io";
 import Link from "next/link";
@@ -39,7 +40,7 @@ const AboutMe = () => {
               target="_blank"
               rel="referrer"
             >
-              <FaInstagramSquare />
+              <RiInstagramFill />
             </Link>
             <Link
               href="https://github.com/stanleylew5"
