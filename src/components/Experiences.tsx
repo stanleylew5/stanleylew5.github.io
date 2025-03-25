@@ -23,7 +23,7 @@ const Down = {
 
 const Experiences = () => {
   return (
-    <div className="mx-[10%] md:mx-[15%]" id="experiences">
+    <div className="mx-[10%] md:mx-[15%]">
       <motion.p
         variants={SlideInFromLeft}
         viewport={{ once: true, amount: 0 }}

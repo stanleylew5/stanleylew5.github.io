@@ -82,6 +82,7 @@ const AboutMe = () => {
                 whileInView={"animate"}
                 custom={(index % 5) * 0.2 + 1}
                 key={index}
+                id="experiences"
               >
                 <Link
                   href={link}

@@ -1,14 +1,14 @@
 export const navigation = [
   {
     text: "ABOUT ME",
-    link: "/#aboutme",
+    link: "aboutme",
   },
   {
     text: "EXPERIENCES",
-    link: "/#experiences",
+    link: "experiences",
   },
   {
     text: "PROJECTS",
-    link: "/#projects",
+    link: "projects",
   },
 ];
