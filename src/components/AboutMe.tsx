@@ -85,7 +85,7 @@ const AboutMe = () => {
               >
                 <Link
                   href={link}
-                  className="hover:-translate-y-0.5 hover:opacity-60"
+                  className="hover:opacity-60"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
