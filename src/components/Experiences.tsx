@@ -35,25 +35,27 @@ const Experiences = () => {
         Experiences
       </motion.p>
       <div className="border-stanley-gray-300 border-b-1" />
-      {/* Map over experiences */}
-      {experiences.map(({ photo, company, position, dates, city }, index) => (
-        <motion.div
-          variants={Down}
-          viewport={{ once: true, amount: 0.25 }}
-          initial="initial"
-          whileInView="animate"
-          custom={index === 0 ? 0 : 0.1}
-          key={index}
-        >
-          <ExperienceCard
-            photo={photo}
-            company={company}
-            position={position}
-            dates={dates}
-            city={city}
-          />
-        </motion.div>
-      ))}
+      {experiences.map(
+        ({ photo, company, position, dates, city, contributions }, index) => (
+          <motion.div
+            variants={Down}
+            viewport={{ once: true, amount: 0.25 }}
+            initial="initial"
+            whileInView="animate"
+            custom={index === 0 ? 0 : 0.1}
+            key={index}
+          >
+            <ExperienceCard
+              photo={photo}
+              company={company}
+              position={position}
+              dates={dates}
+              city={city}
+              contributions={contributions}
+            />
+          </motion.div>
+        ),
+      )}
     </div>
   );
 };

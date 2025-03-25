@@ -6,6 +6,7 @@ interface CardProps {
   position: string;
   dates: string;
   city: string;
+  contributions: string[];
 }
 const ExperienceCard: React.FC<CardProps> = ({
   photo,
@@ -13,6 +14,7 @@ const ExperienceCard: React.FC<CardProps> = ({
   position,
   dates,
   city,
+  contributions,
 }) => {
   return (
     <div className="grid grid-cols-12 pt-6">
@@ -34,7 +36,13 @@ const ExperienceCard: React.FC<CardProps> = ({
       <p className="text-stanley-gray-200 col-span-12 pt-4 text-center md:hidden">
         {city} | {dates}
       </p>
-
+      <div className="col-span-12 pt-4">
+        {contributions.map((contribution, index) => (
+          <p key={index} className="pb-1">
+            {contribution}
+          </p>
+        ))}
+      </div>
       <div className="border-stanley-gray-300 col-span-12 border-b-1 pb-6" />
     </div>
   );
