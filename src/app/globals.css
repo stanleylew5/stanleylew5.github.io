@@ -8,3 +8,16 @@
   --color-stanley-gray-200: #7c7c7c;
   --color-stanley-gray-300: #e8e8e8;
 }
+
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.grow {
+  animation: grow 1s ease-out forwards;
+}

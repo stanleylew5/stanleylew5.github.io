@@ -1,11 +1,30 @@
+"use client";
 import Image from "next/image";
 import casual from "../../public/casual.png";
 import online from "../../public/online.svg";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { MdEmail } from "react-icons/md";
-import { IoIosDocument } from "react-icons/io";
+import socials from "@/data/socials";
 import Link from "next/link";
+import * as motion from "motion/react-client";
+
+const SlideInFromLeft = {
+  initial: { opacity: 0, x: -10 },
+  animate: (custom: number) => ({
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, delay: custom, ease: "backInOut" },
+  }),
+};
+
+const Pebble = {
+  initial: { opacity: 0, x: -10, y: -10 },
+  animate: (custom: number) => ({
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: { duration: 1, delay: custom, ease: "backInOut" },
+  }),
+};
+
 const AboutMe = () => {
   return (
     <div
@@ -18,63 +37,62 @@ const AboutMe = () => {
           <Image
             src={online}
             alt="online"
-            className="absolute right-6 bottom-0 w-[20vw] md:right-0 md:w-[5vw]"
+            className="absolute right-6 bottom-0 w-[20vw] grow md:right-0 md:w-[5vw]"
           />
         </div>
         <div className="flex flex-col items-center justify-center pt-8 md:col-span-3 md:items-start md:pt-0">
-          <p className="from-stanley-black-100 to-stanley-gray-100 bg-gradient-to-r bg-clip-text pb-4 text-4xl font-semibold text-transparent md:text-7xl">
+          <motion.p
+            variants={SlideInFromLeft}
+            viewport={{ once: true, amount: 0 }}
+            initial="initial"
+            whileInView={"animate"}
+            custom={0}
+            className="from-stanley-black-100 to-stanley-gray-100 bg-gradient-to-r bg-clip-text pb-4 text-4xl font-semibold text-transparent md:text-7xl"
+          >
             Stanley Lew
-          </p>
-          <p className="text-stanley-gray-200 pb-4 text-xl md:text-3xl">
+          </motion.p>
+          <motion.p
+            variants={SlideInFromLeft}
+            viewport={{ once: true, amount: 0 }}
+            initial="initial"
+            whileInView={"animate"}
+            custom={0.25}
+            className="text-stanley-gray-200 pb-4 text-xl md:text-3xl"
+          >
             Student, Software Engineer
-          </p>
-          <p className="text-stanley-gray-200 text-md pb-4 text-center md:text-left md:text-lg">
+          </motion.p>
+          <motion.p
+            variants={SlideInFromLeft}
+            viewport={{ once: true, amount: 0 }}
+            initial="initial"
+            whileInView={"animate"}
+            custom={0.5}
+            className="text-stanley-gray-200 text-md pb-4 text-center md:text-left md:text-lg"
+          >
             Hello! I&apos;m Stanley Lew, a second year CS at the University of
             California, Riverside. Currently, I am pursuing a BS in Computer
             Science and a minor in Informational Systems.
-          </p>
+          </motion.p>
           <div className="flex gap-4 pt-4 text-4xl md:pt-0">
-            <Link
-              href="https://www.instagram.com/stanleylew5/"
-              className="hover:-translate-y-0.5 hover:opacity-60"
-              target="_blank"
-              rel="referrer"
-            >
-              <RiInstagramFill />
-            </Link>
-            <Link
-              href="https://github.com/stanleylew5"
-              className="hover:-translate-y-0.5 hover:opacity-60"
-              target="_blank"
-              rel="referrer"
-            >
-              <FaGithub />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/stanleylew5/"
-              className="hover:-translate-y-0.5 hover:opacity-60"
-              target="_blank"
-              rel="referrer"
-            >
-              <FaLinkedin />
-            </Link>
-            <Link
-              href="/resume.pdf"
-              className="hover:-translate-y-0.5 hover:opacity-60"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IoIosDocument />
-            </Link>
-
-            <Link
-              href="mailto:stanley43595@gmail.com"
-              className="hover:-translate-y-0.5 hover:opacity-60"
-              target="_blank"
-              rel="referrer"
-            >
-              <MdEmail />
-            </Link>
+            {socials.map(({ Icon, link }, index) => (
+              <motion.div
+                variants={Pebble}
+                viewport={{ once: true, amount: 0 }}
+                initial="initial"
+                whileInView={"animate"}
+                custom={(index % 5) * 0.2 + 1}
+                key={index}
+              >
+                <Link
+                  href={link}
+                  className="hover:-translate-y-0.5 hover:opacity-60"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon />
+                </Link>
+              </motion.div>
+            ))}
           </div>
         </div>
       </div>

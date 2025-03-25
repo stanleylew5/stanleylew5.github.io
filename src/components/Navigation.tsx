@@ -31,9 +31,10 @@ const Navigation = () => {
           <Link
             href={link}
             key={index}
-            className="mr-10 hover:opacity-40 md:text-2xl lg:text-3xl"
+            className="group relative mr-10 px-1 transition-all duration-1000 ease-in-out md:text-2xl lg:text-3xl"
           >
             {text}
+            <span className="bg-stanley-gray-100 absolute -bottom-1 left-1/2 h-[3px] w-0 transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full"></span>
           </Link>
         ))}
       </div>
