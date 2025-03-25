@@ -38,9 +38,9 @@ const Navigation = () => {
         ))}
       </div>
       {nav && (
-        <div className="border-stanley-black-100 fixed top-18 -z-10 flex w-screen flex-col items-center border-b-1 bg-white md:hidden">
+        <div className="fixed top-18 -z-10 flex w-screen flex-col items-center border-b-2 border-blue-300 bg-white md:hidden">
           {navigation.map(({ text, link }, index) => (
-            <Link href={link} key={index} onClick={handleNav} className="">
+            <Link href={link} key={index} onClick={handleNav} className="pt-2">
               {text}
             </Link>
           ))}

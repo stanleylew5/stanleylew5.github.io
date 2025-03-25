@@ -31,10 +31,10 @@ const ExperienceCard: React.FC<CardProps> = ({
         <p>{city}</p>
         <p>{dates}</p>
       </div>
-      <p className="text-stanley-gray-200 col-span-6 pt-4 md:hidden">{city}</p>
-      <p className="text-stanley-gray-200 col-span-6 flex justify-end pt-4 md:hidden">
-        {dates}
+      <p className="text-stanley-gray-200 col-span-12 pt-4 text-center md:hidden">
+        {city} | {dates}
       </p>
+
       <div className="border-stanley-gray-300 col-span-12 border-b-1 pb-6" />
     </div>
   );
