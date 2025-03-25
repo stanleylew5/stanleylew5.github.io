@@ -18,7 +18,7 @@ const Navigation = () => {
       <div className="flex flex-row">
         <Link href="/" className="flex items-center">
           <Image src={prof} alt="prof" className="ml-4 w-15 py-2 md:w-20" />
-          <p className="ml-4 text-xl font-medium text-black hover:opacity-40 md:text-3xl">
+          <p className="ml-4 text-xl font-medium text-black hover:opacity-40 md:text-2xl lg:text-3xl">
             STANLEY LEW
           </p>
           <div onClick={handleNav}>
@@ -31,7 +31,7 @@ const Navigation = () => {
           <Link
             href={link}
             key={index}
-            className="mr-10 text-3xl hover:opacity-40"
+            className="mr-10 hover:opacity-40 md:text-2xl lg:text-3xl"
           >
             {text}
           </Link>

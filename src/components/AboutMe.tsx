@@ -13,11 +13,11 @@ const AboutMe = () => {
     >
       <div className="grid grid-cols-1 py-[5%] md:grid-cols-4">
         <div className="relative size-fit">
-          <Image src={casual} alt="casual" className="w-[80vw] md:w-[15vw]" />
+          <Image src={casual} alt="casual" className="w-[90vw] md:w-[15vw]" />
           <Image
             src={online}
             alt="online"
-            className="absolute right-6 bottom-0 w-18 md:right-0"
+            className="absolute right-6 bottom-0 w-[20vw] md:right-0 md:w-[5vw]"
           />
         </div>
         <div className="flex flex-col items-center justify-center pt-8 md:col-span-3 md:items-start md:pt-0">
