@@ -93,7 +93,7 @@ export const projects = [
       SiTailwindcss,
       TbBrandFramerMotion,
     ],
-    github: "https://github.com/acm-ucr/uoft-cvdsa-website",
+    github: "https://github.com/acm-ucr/cvdsa-uoft-website",
     website: "https://acm-ucr.github.io/cvdsa-uoft-website/",
   },
   {
