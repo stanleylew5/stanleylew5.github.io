@@ -58,7 +58,7 @@ const Navigation = () => {
             <motion.div
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.25, duration: 0.6, ease: "easeIn" }}
+              transition={{ delay: 0.2, duration: 0.6, ease: "easeIn" }}
               className="text-stanley-black-100 flex w-[80vw] justify-end py-6 pr-4 text-3xl"
             >
               <IoCloseOutline onClick={handleNav} className="cursor-pointer" />
@@ -66,7 +66,7 @@ const Navigation = () => {
             <motion.div
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.45, duration: 0.5, ease: "easeIn" }}
+              transition={{ delay: 0.4, duration: 0.5, ease: "easeIn" }}
               className="border-stanley-gray-300 mx-4 border-b-1"
             />
             {navigation.map(({ text, link }, index) => (
@@ -75,7 +75,7 @@ const Navigation = () => {
                   initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
-                    delay: (index + 1) * 0.05 + 0.6,
+                    delay: (index + 1) * 0.05 + 0.55,
                     duration: 0.4,
                     ease: "easeIn",
                   }}
@@ -94,7 +94,7 @@ const Navigation = () => {
                   initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
-                    delay: (index + 1) * 0.05 + 0.65,
+                    delay: (index + 1) * 0.05 + 0.6,
                     duration: 0.4,
                     ease: "easeIn",
                   }}
