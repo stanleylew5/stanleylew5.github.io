@@ -52,31 +52,31 @@ const Navigation = () => {
             initial={{ width: 0, right: 0 }}
             animate={{ width: "80vw" }}
             exit={{ width: 0 }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
             className="border-stanley-gray-100 fixed top-0 right-0 z-10 flex h-screen flex-col border-b-1 bg-white md:hidden"
           >
             <motion.div
-              initial={{ y: 5, opacity: 0 }}
+              initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.55, duration: 0.6, ease: "easeIn" }}
+              transition={{ delay: 0.25, duration: 0.6, ease: "easeIn" }}
               className="text-stanley-black-100 flex w-[80vw] justify-end py-6 pr-4 text-3xl"
             >
               <IoCloseOutline onClick={handleNav} className="cursor-pointer" />
             </motion.div>
             <motion.div
-              initial={{ y: 5, opacity: 0 }}
+              initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.8, duration: 0.5, ease: "easeIn" }}
+              transition={{ delay: 0.45, duration: 0.5, ease: "easeIn" }}
               className="border-stanley-gray-300 mx-4 border-b-1"
             />
             {navigation.map(({ text, link }, index) => (
               <div key={index}>
                 <motion.div
-                  initial={{ y: 5, opacity: 0 }}
+                  initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
-                    delay: (index + 1) * 0.2 + 1.05,
-                    duration: 0.5,
+                    delay: (index + 1) * 0.05 + 0.6,
+                    duration: 0.4,
                     ease: "easeIn",
                   }}
                   className="py-4 pl-4"
@@ -91,11 +91,11 @@ const Navigation = () => {
                   </ScrollLink>
                 </motion.div>
                 <motion.div
-                  initial={{ y: 5, opacity: 0 }}
+                  initial={{ y: 10, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
-                    delay: (index + 1) * 0.2 + 1.2,
-                    duration: 0.5,
+                    delay: (index + 1) * 0.05 + 0.65,
+                    duration: 0.4,
                     ease: "easeIn",
                   }}
                   className="border-stanley-gray-300 mx-4 border-b-1"
