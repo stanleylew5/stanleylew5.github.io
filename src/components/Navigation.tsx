@@ -5,6 +5,8 @@ import prof from "../../public/prof.png";
 import { navigation } from "@/data/navigation";
 import { AlignJustify } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
+import { IoCloseOutline } from "react-icons/io5";
+import { motion, AnimatePresence } from "motion/react";
 const Navigation = () => {
   const [nav, setNav] = useState(false);
 
@@ -25,10 +27,10 @@ const Navigation = () => {
           <p className="ml-4 text-xl font-medium text-black hover:opacity-40 md:text-2xl lg:text-3xl">
             STANLEY LEW
           </p>
-          <div onClick={handleNav}>
-            <AlignJustify className="absolute top-7 right-4 text-3xl text-black hover:cursor-pointer hover:opacity-60 md:hidden" />
-          </div>
         </ScrollLink>
+        <div onClick={handleNav}>
+          <AlignJustify className="absolute top-7 right-4 text-3xl text-black hover:cursor-pointer hover:opacity-60 md:hidden" />
+        </div>
       </div>
       <div className="absolute right-0 hidden text-center md:flex">
         {navigation.map(({ text, link }, index) => (
@@ -44,22 +46,65 @@ const Navigation = () => {
           </ScrollLink>
         ))}
       </div>
-      {nav && (
-        <div className="border-stanley-gray-100 fixed top-18 -z-10 flex w-screen flex-col items-center border-b-1 bg-white md:hidden">
-          {navigation.map(({ text, link }, index) => (
-            <ScrollLink
-              to={link}
-              key={index}
-              onClick={handleNav}
-              className="pt-2"
-              smooth={true}
-              duration={500}
+      <AnimatePresence>
+        {nav && (
+          <motion.div
+            initial={{ width: 0, right: 0 }}
+            animate={{ width: "80vw" }}
+            exit={{ width: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="border-stanley-gray-100 fixed top-0 right-0 z-10 flex h-screen flex-col border-b-1 bg-white md:hidden"
+          >
+            <motion.div
+              initial={{ y: 5, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.55, duration: 0.6, ease: "easeIn" }}
+              className="text-stanley-black-100 flex w-[80vw] justify-end py-6 pr-4 text-3xl"
             >
-              {text}
-            </ScrollLink>
-          ))}
-        </div>
-      )}
+              <IoCloseOutline onClick={handleNav} className="cursor-pointer" />
+            </motion.div>
+            <motion.div
+              initial={{ y: 5, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.8, duration: 0.5, ease: "easeIn" }}
+              className="border-stanley-gray-300 mx-4 border-b-1"
+            />
+            {navigation.map(({ text, link }, index) => (
+              <div key={index}>
+                <motion.div
+                  initial={{ y: 5, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: (index + 1) * 0.2 + 1.05,
+                    duration: 0.5,
+                    ease: "easeIn",
+                  }}
+                  className="py-4 pl-4"
+                >
+                  <ScrollLink
+                    to={link}
+                    onClick={handleNav}
+                    smooth={true}
+                    duration={500}
+                  >
+                    {text}
+                  </ScrollLink>
+                </motion.div>
+                <motion.div
+                  initial={{ y: 5, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{
+                    delay: (index + 1) * 0.2 + 1.2,
+                    duration: 0.5,
+                    ease: "easeIn",
+                  }}
+                  className="border-stanley-gray-300 mx-4 border-b-1"
+                />
+              </div>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
