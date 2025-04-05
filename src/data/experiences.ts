@@ -4,7 +4,18 @@ import tkh from "../../public/experiences/tkh.png";
 import dv from "../../public/experiences/dv.png";
 import bearhack from "../../public/experiences/bearhack.png";
 import edmo from "../../public/experiences/edmo.png";
+import ucr from "../../public/experiences/ucr.png";
 export const experiences = [
+  {
+    photo: ucr,
+    company: "University of California, Riverside",
+    position: "Undergraduate Learning Assistant (ULA)",
+    dates: "April 2025 - Present",
+    city: "Riverside, California",
+    contributions: [
+      "- Host weekly office hours & attend weekly lab sections with ~30 students to provide a supportive learning environment",
+    ],
+  },
   {
     photo: dau,
     company: "Design @ UCR",
