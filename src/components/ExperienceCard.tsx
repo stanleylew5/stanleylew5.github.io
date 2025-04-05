@@ -23,7 +23,7 @@ const ExperienceCard: React.FC<CardProps> = ({
         alt="company photo"
         className="col-span-3 w-20 md:col-span-1"
       />
-      <div className="col-span-9 grid grid-rows-2 items-center pl-4 md:col-span-6 2xl:col-span-9">
+      <div className="col-span-9 grid grid-rows-2 items-center pl-4 md:col-span-6 2xl:col-span-9 2xl:pl-0">
         <p className="text-xl leading-none font-bold md:text-2xl">{company}</p>
         <p className="text-stanley-gray-200 text-md leading-none md:text-xl">
           {position}
