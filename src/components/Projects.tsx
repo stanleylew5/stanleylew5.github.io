@@ -1,7 +1,7 @@
 "use client";
-import { projects } from "@/data/projects";
+import projects from "@/data/projects";
 import ProjectCard from "./ProjectCard";
-import * as motion from "motion/react-client";
+import { motion } from "motion/react";
 
 const SlideInFromLeft = {
   initial: { opacity: 0, x: -10 },

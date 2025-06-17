@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import prof from "../../public/prof.png";
-import { navigation } from "@/data/navigation";
+import prof from "@/public/prof.png";
+import navigation from "@/data/navigation";
 import { AlignJustify } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 import { IoCloseOutline } from "react-icons/io5";

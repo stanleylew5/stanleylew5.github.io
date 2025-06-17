@@ -1,7 +1,7 @@
 "use client";
-import { experiences } from "@/data/experiences";
+import experiences from "@/data/experiences";
 import ExperienceCard from "./ExperienceCard";
-import * as motion from "motion/react-client";
+import { motion } from "motion/react";
 
 const SlideInFromLeft = {
   initial: { opacity: 0, x: -10 },
@@ -30,7 +30,7 @@ const Experiences = () => {
         initial="initial"
         whileInView={"animate"}
         custom={0}
-        className="from-stanley-black-100 to-stanley-gray-100 size-max bg-gradient-to-r bg-clip-text pb-4 text-3xl font-semibold text-transparent md:text-5xl"
+        className="from-stanley-black-100 to-stanley-gray-100 mt-0 size-max bg-gradient-to-r bg-clip-text pb-4 text-3xl font-semibold text-transparent md:mt-12 md:text-5xl"
       >
         Experiences
       </motion.p>

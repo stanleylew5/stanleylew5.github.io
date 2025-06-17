@@ -5,7 +5,7 @@ import dv from "../../public/experiences/dv.png";
 import bearhack from "../../public/experiences/bearhack.png";
 import edmo from "../../public/experiences/edmo.png";
 import ucr from "../../public/experiences/ucr.png";
-export const experiences = [
+const experiences = [
   {
     photo: ucr,
     company: "University of California, Riverside",
@@ -82,3 +82,4 @@ export const experiences = [
     ],
   },
 ];
+export default experiences;

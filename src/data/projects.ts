@@ -1,13 +1,14 @@
 /* import portfolio from "../../public/projects/portfolio.png"; */
-import witl from "../../public/projects/witl.png";
-import artfactory from "../../public/projects/artfactory.png";
-import sdd from "../../public/projects/sdd.png";
-import ewb from "../../public/projects/ewb.png";
-import dashboard from "../../public/projects/dashboard.png";
-import caveexploring from "../../public/projects/caveexploring.png";
-import aurora from "../../public/projects/aurora.png";
-import csa from "../../public/projects/csa.png";
-import cvdsa from "../../public/projects/cvdsa.png";
+import witl from "@/public/projects/witl.png";
+import artfactory from "@/public/projects/artfactory.png";
+import sdd from "@/public/projects/sdd.png";
+import ewb from "@/public/projects/ewb.png";
+import dashboard from "@/public/projects/dashboard.png";
+import caveexploring from "@/public/projects/caveexploring.png";
+import aurora from "@/public/projects/aurora.png";
+import csa from "@/public/projects/csa.png";
+import cvdsa from "@/public/projects/cvdsa.png";
+import acmatlas from "@/public/projects/acmatlas.png";
 import {
   SiReact,
   SiNextdotjs,
@@ -22,7 +23,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
 
-export const projects = [
+const projects = [
   {
     image: dashboard,
     name: "Productivity Dashboard",
@@ -56,6 +57,15 @@ export const projects = [
     ],
     github: "https://github.com/acm-ucr/aurora",
     website: "https://github.com/acm-ucr/aurora",
+  },
+  {
+    image: acmatlas,
+    name: "ACM Atlas",
+    description:
+      "Led a team of 15+ developers, teaching technical skills in Next.js, TypeScript, TailwindCSS, Framer Motion, and Tanstack Query",
+    icons: [SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiPrettier],
+    github: "https://github.com/acm-ucr/acm-atlas",
+    website: "https://acm.cs.ucr.edu",
   },
   {
     image: caveexploring,
@@ -157,3 +167,4 @@ export const projects = [
     website: "https://ewb.ucrhighlanders.org/",
   },
 ];
+export default projects;
