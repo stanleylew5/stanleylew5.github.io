@@ -8,7 +8,7 @@ interface ProjectCardProps {
   description: string;
   icons: ElementType[];
   github: string;
-  website: string;
+  website?: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -33,9 +33,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Link href={github} className="pr-4 text-4xl">
               <FaGithub />
             </Link>
-            <Link href={website} className="text-4xl">
-              <FaGlobe />
-            </Link>
+            {website && (
+              <Link href={website} className="text-4xl">
+                <FaGlobe />
+              </Link>
+            )}
           </div>
         </div>
         <p className="pt-6 text-xl">{description}</p>

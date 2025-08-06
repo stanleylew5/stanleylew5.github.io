@@ -9,6 +9,8 @@ import aurora from "@/public/projects/aurora.png";
 import csa from "@/public/projects/csa.png";
 import cvdsa from "@/public/projects/cvdsa.png";
 import acmatlas from "@/public/projects/acmatlas.png";
+import starlight from "@/public/projects/starlight.png";
+import na from "@/public/projects/na.png";
 import {
   SiReact,
   SiNextdotjs,
@@ -18,12 +20,38 @@ import {
   SiPrettier,
   SiCplusplus,
   SiCmake,
+  SiOllama,
+  SiTypescript,
+  SiPython,
 } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
 
 const projects = [
+  {
+    image: starlight,
+    name: "Starlight",
+    description:
+      "Developing a full-stack application and project management system with REST API logic for ACM@UCR.",
+    icons: [
+      SiReact,
+      SiNextdotjs,
+      SiTypescript,
+      SiTailwindcss,
+      SiFigma,
+      SiFirebase,
+      SiPrettier,
+    ],
+    github: "https://github.com/acm-ucr/starlight",
+  },
+  {
+    image: na,
+    name: "SWE AI Agent",
+    description:
+      "Developed a local, distributed SWE AI agent system capable of automating the creation of the frontend of a basic website into a Github Repo when given a user prompt and the Figma assets.",
+    icons: [SiPython, SiOllama],
+    github: "https://github.com/acm-ucr/swe-agent",
+  },
   {
     image: dashboard,
     name: "Productivity Dashboard",
