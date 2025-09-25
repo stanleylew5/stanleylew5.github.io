@@ -18,7 +18,7 @@ const socials = [
   },
   {
     Icon: IoIosDocument,
-    link: "/stanley_lew_resume.pdf",
+    link: "/Stanley_Lew_Resume.pdf",
   },
   {
     Icon: MdEmail,
