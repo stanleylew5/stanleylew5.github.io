@@ -30,11 +30,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="grid grid-cols-5 font-semibold">
           <p className="col-span-3 text-xl md:col-span-4 md:text-4xl">{name}</p>
           <div className="col-span-2 flex items-center justify-end md:col-span-1">
-            <Link href={github} className="pr-4 text-4xl">
+            <Link
+              href={github}
+              className="pr-4 text-4xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub />
             </Link>
             {website && (
-              <Link href={website} className="text-4xl">
+              <Link
+                href={website}
+                className="text-4xl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGlobe />
               </Link>
             )}

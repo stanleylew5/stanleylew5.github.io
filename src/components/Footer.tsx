@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <div className="bg-stanley-white-100 flex flex-col items-center pb-2">
       <p>© 2025 Stanley Lew</p>
-      <p>Last Updated: August 2025</p>
+      <p>Last Updated: September 2025</p>
     </div>
   );
 };

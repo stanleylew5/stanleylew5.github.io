@@ -11,6 +11,7 @@ import cvdsa from "@/public/projects/cvdsa.png";
 import acmatlas from "@/public/projects/acmatlas.png";
 import starlight from "@/public/projects/starlight.png";
 import na from "@/public/projects/na.png";
+import reats from "@/public/projects/reats.png";
 import {
   SiReact,
   SiNextdotjs,
@@ -28,6 +29,21 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
 
 const projects = [
+  {
+    image: reats,
+    name: "R'Eats",
+    description: "The Better UCR Dining Menu",
+    icons: [
+      SiPython,
+      SiNextdotjs,
+      SiTypescript,
+      SiTailwindcss,
+      SiFigma,
+      SiPrettier,
+    ],
+    github: "https://github.com/stanleylew5/r-eats",
+    website: "https://r-eats.vercel.app/",
+  },
   {
     image: starlight,
     name: "Starlight",

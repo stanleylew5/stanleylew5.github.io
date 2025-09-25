@@ -13,7 +13,8 @@ const experiences = [
     dates: "April 2025 - Present",
     city: "Riverside, California",
     contributions: [
-      "- Host weekly office hours & attend weekly lab sections with ~30 students to provide a supportive learning environment",
+      "- Facilitated student learning of data structure & program design concepts by guiding students through coding assignments, labs, and debugging strategies",
+      "- Supported classes of 100+ students in C++ and software construction by hosting office hours and assisting in lab sessions",
     ],
   },
   {
@@ -30,7 +31,7 @@ const experiences = [
   {
     photo: acm,
     company: "ACM @ UCR",
-    position: "Projects Director & Spark Director",
+    position: "Projects Director, Web Dev Director, & Project Lead",
     dates: "Mar 2024 - Present",
     city: "Riverside, California",
     contributions: [
