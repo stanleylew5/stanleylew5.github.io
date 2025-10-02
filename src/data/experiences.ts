@@ -5,7 +5,16 @@ import dv from "../../public/experiences/dv.png";
 import bearhack from "../../public/experiences/bearhack.png";
 import edmo from "../../public/experiences/edmo.png";
 import ucr from "../../public/experiences/ucr.png";
+import bcoe from "@/public/experiences/bcoe.jpg";
 const experiences = [
+  {
+    photo: bcoe,
+    company: "Collaborative Intelligence Systems Lab (CISL) @ UCR",
+    position: "Undergraduate Researcher",
+    dates: "September 2025 - Present",
+    city: "Riverside, California",
+    contributions: [],
+  },
   {
     photo: ucr,
     company: "University of California, Riverside",
@@ -43,7 +52,7 @@ const experiences = [
   {
     photo: dv,
     company: "Designverse",
-    position: "SWE Lead",
+    position: "Software Engineer",
     dates: "Mar 2024 - May 2025",
     city: "Riverside, California",
     contributions: [
