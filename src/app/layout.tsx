@@ -20,6 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="bj0xb2okVI9kZvzX1n6dyl9a6D9G8x3MIe7L6lK3jGI"
+        />
+      </head>
       <body className={`${albertSans.variable} antialiased`}>
         <Navigation />
         {children}
