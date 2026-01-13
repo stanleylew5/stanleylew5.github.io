@@ -13,7 +13,10 @@ const experiences = [
     position: "Undergraduate Researcher",
     dates: "September 2025 - Present",
     city: "Riverside, California",
-    contributions: [],
+    contributions: [
+      "- Built automated stereo-camera trajectory generation in Habitat-Sim (headless) for simultaneous localization and mapping (SLAM) data collection in Coop3rSLAM",
+      "- Implemented an asynchronous ZeroMQ-based communication layer with typed packet enums and serialization for multi-agent message passing",
+    ],
   },
   {
     photo: ucr,
