@@ -1,9 +1,9 @@
 "use client";
 import experiences from "@/data/experiences";
 import ExperienceCard from "./ExperienceCard";
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 
-const SlideInFromLeft = {
+const SlideInFromLeft: Variants = {
   initial: { opacity: 0, x: -10 },
   animate: (custom: number) => ({
     opacity: 1,
@@ -11,8 +11,7 @@ const SlideInFromLeft = {
     transition: { duration: 1, delay: custom, ease: "backInOut" },
   }),
 };
-
-const Down = {
+const Down: Variants = {
   initial: { opacity: 0, y: -10 },
   animate: (custom: number) => ({
     opacity: 1,
@@ -59,5 +58,4 @@ const Experiences = () => {
     </div>
   );
 };
-
 export default Experiences;
