@@ -11,7 +11,7 @@ const experiences = [
     photo: bcoe,
     company: "Collaborative Intelligence Systems Lab",
     position: "Undergraduate Researcher",
-    dates: "September 2025 - Present",
+    dates: "Sept 2025 - Present",
     city: "Riverside, California",
     contributions: [
       "- Evaluated Swarm-SLAM, an infrastructureless cooperative SLAM framework, on EuRoC datasets within a Dockerized ROS 2 Humble Linux environment, and built custom Python scripts using Umeyama alignment and evo to achieve low-RMSE trajectory comparisons",
@@ -22,7 +22,7 @@ const experiences = [
     photo: ucr,
     company: "University of California, Riverside",
     position: "Undergraduate Learning Assistant (ULA)",
-    dates: "April 2025 - Present",
+    dates: "Apr 2025 - Present",
     city: "Riverside, California",
     contributions: [
       "- Guided 100+ students through coding assignments and debugging labs covering data structures & program design",
@@ -33,7 +33,7 @@ const experiences = [
     photo: bcoe,
     company: "Bourns College of Engineering",
     position: "Web Developer",
-    dates: "March 2026 - Present",
+    dates: "Mar 2026 - Present",
     city: "Riverside, California",
     contributions: [
       "- Built and maintaining the official Autonomous and Secure Heterogeneous Integrated (AASHI) website",
@@ -54,7 +54,7 @@ const experiences = [
     photo: acm,
     company: "ACM @ UCR",
     position: "Projects Director, Web Dev Director, & Project Lead",
-    dates: "Mar 2024 - Present",
+    dates: "Mar 2024 - Jan 2026",
     city: "Riverside, California",
     contributions: [
       "- Managed 25+ Next.js projects and hosted weekly check-in meetings with project leads to oversee development for UCR’s CSE department, student organizations, & external companies.",
