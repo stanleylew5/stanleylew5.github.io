@@ -4,9 +4,9 @@ import casual from "@/public/casual.png";
 import online from "@/public/online.svg";
 import socials from "@/data/socials";
 import Link from "next/link";
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 
-const SlideInFromLeft = {
+const SlideInFromLeft: Variants = {
   initial: { opacity: 0, x: -10 },
   animate: (custom: number) => ({
     opacity: 1,
@@ -14,8 +14,7 @@ const SlideInFromLeft = {
     transition: { duration: 1, delay: custom, ease: "backInOut" },
   }),
 };
-
-const Pebble = {
+const Pebble: Variants = {
   initial: { opacity: 0, x: -10, y: -10 },
   animate: (custom: number) => ({
     opacity: 1,
@@ -44,7 +43,6 @@ const AboutMe = () => {
       <div className="absolute top-[80%] right-[30%] z-0 rounded-full bg-purple-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute top-[80%] right-[45%] z-0 rounded-full bg-orange-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute top-[80%] right-[65%] z-0 rounded-full bg-red-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
-
       <div className="z-10 mx-[10%] grid grid-cols-1 py-[5%] md:mx-[15%] md:grid-cols-4">
         <div className="relative size-fit">
           <Image src={casual} alt="casual" className="w-[90vw] md:w-[15vw]" />
@@ -114,5 +112,4 @@ const AboutMe = () => {
     </div>
   );
 };
-
 export default AboutMe;
