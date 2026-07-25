@@ -9,7 +9,7 @@
 
 A clean minimalist website displaying my experiences, projects, and contact information.
 
-Deployed on Vercel and Github Pages
+Deployed on Vercel and Github Pages.
 
 ## Figma
 
