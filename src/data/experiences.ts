@@ -1,21 +1,21 @@
-import dau from "../../public/experiences/dau.png";
-import acm from "../../public/experiences/acm.png";
-import tkh from "../../public/experiences/tkh.png";
-import dv from "../../public/experiences/dv.png";
-import bearhack from "../../public/experiences/bearhack.png";
-import edmo from "../../public/experiences/edmo.png";
-import ucr from "../../public/experiences/ucr.png";
+import dau from "@/public/experiences/dau.png";
+import acm from "@/public/experiences/acm.png";
+import tkh from "@/public/experiences/tkh.png";
+import dv from "@/public/experiences/dv.png";
+import bearhack from "@/public/experiences/bearhack.png";
+import edmo from "@/public/experiences/edmo.png";
+import ucr from "@/public/experiences/ucr.png";
 import bcoe from "@/public/experiences/bcoe.jpg";
 const experiences = [
   {
     photo: bcoe,
-    company: "Collaborative Intelligence Systems Lab (CISL) @ UCR",
+    company: "Collaborative Intelligence Systems Lab",
     position: "Undergraduate Researcher",
     dates: "September 2025 - Present",
     city: "Riverside, California",
     contributions: [
-      "- Built automated stereo-camera trajectory generation in Habitat-Sim (headless) for simultaneous localization and mapping (SLAM) data collection in Coop3rSLAM",
-      "- Implemented an asynchronous ZeroMQ-based communication layer with typed packet enums and serialization for multi-agent message passing",
+      "- Evaluated Swarm-SLAM, an infrastructureless cooperative SLAM framework, on EuRoC datasets within a Dockerized ROS 2 Humble Linux environment, and built custom Python scripts using Umeyama alignment and evo to achieve low-RMSE trajectory comparisons",
+      "- Adapting NVIDIA Alpamayo’s VLA training methodology to bring autonomous driving capability to the department’s research vehicle",
     ],
   },
   {
@@ -25,15 +25,25 @@ const experiences = [
     dates: "April 2025 - Present",
     city: "Riverside, California",
     contributions: [
-      "- Facilitated student learning of data structure & program design concepts by guiding students through coding assignments, labs, and debugging strategies",
-      "- Supported classes of 100+ students in C++ and software construction by hosting office hours and assisting in lab sessions",
+      "- Guided 100+ students through coding assignments and debugging labs covering data structures & program design",
+      "- Supported classes in C++ and software construction by hosting office hours and assisting in lab sessions",
+    ],
+  },
+  {
+    photo: bcoe,
+    company: "Bourns College of Engineering",
+    position: "Web Developer",
+    dates: "March 2026 - Present",
+    city: "Riverside, California",
+    contributions: [
+      "- Built and maintaining the official Autonomous and Secure Heterogeneous Integrated (AASHI) website",
     ],
   },
   {
     photo: dau,
     company: "Design @ UCR",
     position: "Vice President of Software Engineering",
-    dates: "Mar 2025 - Present",
+    dates: "Mar 2025 - May 2026",
     city: "Riverside, California",
     contributions: [
       "- Ensuring website functionality and development of new pages for displayment of new sponsors, new events, etc.",
@@ -77,7 +87,7 @@ const experiences = [
   {
     photo: bearhack,
     company: "BearHack",
-    position: "SWE Committee Member",
+    position: "Frontend Developer",
     dates: "Mar 2024 - Jun 2024",
     city: "Riverside, California",
     contributions: [
@@ -91,7 +101,7 @@ const experiences = [
     dates: "Jun 2023 - Jul 2023",
     city: "San Jose, California",
     contributions: [
-      "- Led and instructed classes of 30+ campers through daily activities focused on various curriculum themes: Minecraft Education Edition (Block coding), Procreate software, Bridge-Designing, etc.",
+      "- Led and instructed classes of 30+ campers through daily activities focused on various curriculum: Minecraft Education Edition (Block coding), Procreate software, Bridge-Designing, etc.",
     ],
   },
 ];
