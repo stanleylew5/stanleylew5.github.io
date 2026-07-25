@@ -1,14 +1,14 @@
 const navigation = [
   {
-    text: "ABOUT ME",
+    text: "about me",
     link: "aboutme",
   },
   {
-    text: "EXPERIENCES",
+    text: "experiences",
     link: "experiences",
   },
   {
-    text: "PROJECTS",
+    text: "projects",
     link: "projects",
   },
 ];

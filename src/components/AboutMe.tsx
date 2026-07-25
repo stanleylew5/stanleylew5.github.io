@@ -81,7 +81,7 @@ const AboutMe = () => {
             custom={0.5}
             className="text-stanley-gray-200 text-md pb-4 text-center md:text-left md:text-lg"
           >
-            Hello! I&apos;m Stanley Lew, a third year at the University of
+            Hello! I&apos;m Stanley Lew, a fourth year at the University of
             California, Riverside. Currently, I am pursuing a BS in Computer
             Science.
           </motion.p>

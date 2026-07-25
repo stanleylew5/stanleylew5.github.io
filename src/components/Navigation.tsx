@@ -25,7 +25,7 @@ const Navigation = () => {
         >
           <Image src={prof} alt="prof" className="ml-4 w-15 py-2 md:w-20" />
           <p className="ml-4 text-xl font-medium text-black hover:opacity-40 md:text-2xl lg:text-3xl">
-            STANLEY LEW
+            stanley lew
           </p>
         </ScrollLink>
         <div onClick={handleNav}>
