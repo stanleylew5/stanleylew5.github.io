@@ -9,6 +9,8 @@
 
 A clean minimalist website displaying my experiences, projects, and contact information.
 
+Deployed on Vercel and Github Pages
+
 ## Figma
 
 [Personal Portfolio Figma Design File](https://www.figma.com/design/DpAnq6fJinV8vIWxcYv4r7/NEW-PORTFOLIO-WEBSITE?node-id=0-1&t=2F62zHvhtuspR1eb-1)
