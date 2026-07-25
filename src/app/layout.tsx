@@ -3,6 +3,8 @@ import { Albert_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
+
 const albertSans = Albert_Sans({
   variable: "--font-albert-sans",
   subsets: ["latin"],
@@ -30,6 +32,7 @@ export default function RootLayout({
         <Navigation />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
