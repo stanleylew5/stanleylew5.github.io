@@ -6,7 +6,26 @@ import bearhack from "@/public/experiences/bearhack.png";
 import edmo from "@/public/experiences/edmo.png";
 import ucr from "@/public/experiences/ucr.png";
 import bcoe from "@/public/experiences/bcoe.jpg";
+import dr from "@/public/experiences/dr.jpg";
+import jobairo from "@/public/experiences/jobairo.jpg";
+
 const experiences = [
+  {
+    photo: jobairo,
+    company: "JobAiro",
+    position: "Fouding Software Engineer Intern",
+    dates: "Aug 2026 - Present",
+    city: "Remote",
+    contributions: [],
+  },
+  {
+    photo: dr,
+    company: "DeepReach",
+    position: "Research Intern",
+    dates: "Aug 2026 - Sept 2026",
+    city: "San Jose, California",
+    contributions: [],
+  },
   {
     photo: bcoe,
     company: "Collaborative Intelligence Systems Lab",
