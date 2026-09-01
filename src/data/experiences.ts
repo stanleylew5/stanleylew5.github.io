@@ -13,7 +13,7 @@ const experiences = [
   {
     photo: jobairo,
     company: "JobAiro",
-    position: "Fouding Software Engineer Intern",
+    position: "Founding Software Engineer Intern",
     dates: "Aug 2026 - Present",
     city: "Remote",
     contributions: [],
