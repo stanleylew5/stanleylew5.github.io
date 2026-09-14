@@ -33,7 +33,7 @@ const AboutMe = () => {
       <div className="absolute -right-[20%] z-0 rounded-full bg-orange-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute -top-[20%] -left-[20%] z-0 rounded-full bg-red-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute -top-[40%] z-0 rounded-full bg-red-200/30 blur-3xl lg:right-0 lg:h-[400px] lg:w-[400px] 2xl:-top-[20%] 2xl:-right-[10%] 2xl:h-[500px] 2xl:w-[500px]" />
-      <div className="absolute -top-[20%] right-[20%] z-0 rounded-full bg-purple-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
+      <div className="absolute top-[-20%] right-[20%] z-0 rounded-full bg-purple-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute -top-[10%] -left-[10%] z-0 rounded-full bg-purple-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute -top-[20%] left-[10%] z-0 rounded-full bg-orange-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
       <div className="absolute -top-[20%] left-[30%] z-0 rounded-full bg-red-200/30 blur-3xl lg:h-[400px] lg:w-[400px] 2xl:h-[500px] 2xl:w-[500px]" />
