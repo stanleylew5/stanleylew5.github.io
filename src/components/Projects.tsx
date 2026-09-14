@@ -29,11 +29,11 @@ const Projects = () => {
         initial="initial"
         whileInView={"animate"}
         custom={0}
-        className="from-stanley-black-100 to-stanley-gray-100 size-max bg-gradient-to-r bg-clip-text pb-4 text-3xl font-semibold text-transparent md:text-5xl"
+        className="from-stanley-black-100 to-stanley-gray-100 size-max bg-linear-to-r bg-clip-text pb-4 text-3xl font-semibold text-transparent md:text-5xl"
       >
         Projects
       </motion.p>
-      <div className="border-stanley-gray-300 border-b-1" />
+      <div className="border-stanley-gray-300 border-b" />
       {projects.map(
         ({ image, name, description, icons, github, website }, index) => (
           <motion.div

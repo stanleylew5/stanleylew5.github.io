@@ -24,7 +24,10 @@ const experiences = [
     position: "Research Intern",
     dates: "Aug 2026 - Sept 2026",
     city: "San Jose, California",
-    contributions: [],
+    contributions: [
+      "Built MuJoCo-simulated multi-robot environments in Python to model collaborative manipulation tasks",
+      "Performed teleoperation data collection using Pico headsets and XRoboToolkit, capturing MuJoCo simulation state and motion tokens within the simulated environments to build datasets for training agents toward collaborative behavior",
+    ],
   },
   {
     photo: bcoe,
